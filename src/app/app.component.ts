@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HeaderComponent } from './header/header.component';
 import { NavComponent } from "./nav/nav.component";
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,8 @@ import { NavComponent } from "./nav/nav.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'resumeApp in progress1233';
+  
+  constructor(private titleService: Title ){
+    this.titleService.setTitle('Satheesh Vykuntapu- Home');
+  }
 }
