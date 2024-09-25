@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  
+    
   constructor(private titleService: Title ){
     this.titleService.setTitle('Satheesh Vykuntapu- Home');
   }
