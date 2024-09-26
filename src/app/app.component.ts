@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavComponent],
+  imports: [RouterOutlet, HeaderComponent, NavComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
