@@ -24,11 +24,12 @@ export class PortfolioComponent implements OnInit  {
   typescript: boolean = false;
   angular:boolean = false;
   java:boolean = false;
-  python:boolean = false;
+  springboot:boolean = false;
   csharp:boolean = false;
   javascript:boolean = false;
-  react:boolean = false;
-  nodejs:boolean = false;
+  oracle:boolean = false;
+  kafka:boolean = false;
+  maven:boolean = false;
 
 
   constructor(private titleService: Title, private projectService: ProjectsService ){
@@ -48,8 +49,8 @@ export class PortfolioComponent implements OnInit  {
     if(this.angular){
       filterTags.push(Tag.ANGULAR);
     }
-    if(this.react){
-      filterTags.push(Tag.REACT);
+    if(this.oracle){
+      filterTags.push(Tag.ORACLE);
     }
     if(this.java){
       filterTags.push(Tag.JAVA);
@@ -57,17 +58,20 @@ export class PortfolioComponent implements OnInit  {
     if(this.csharp){
       filterTags.push(Tag.CSHARP);
     }
-    if(this.python){
-      filterTags.push(Tag.PYTHON);
+    if(this.springboot){
+      filterTags.push(Tag.SPRINGBOOT);
     }
     if(this.javascript){
       filterTags.push(Tag.JAVASCRIPT);
     }
-    if(this.nodejs){
-      filterTags.push(Tag.NODEJS);
+    if(this.kafka){
+      filterTags.push(Tag.KAFKA);
+    }
+    if(this.maven){
+      filterTags.push(Tag.MAVEN);
     }
 
-    if(this.python || this.csharp || this.java || this.angular || this.typescript || this.nodejs || this.csharp || this.javascript || this.react){
+    if(this.springboot || this.csharp || this.maven || this.java || this.angular || this.typescript || this.kafka || this.csharp || this.javascript || this.oracle){
       this.filtering = true;
     }else{
       this.filtering = false;
@@ -81,11 +85,13 @@ export class PortfolioComponent implements OnInit  {
     this.typescript  = false;
     this.angular = false;
     this.java = false;
-    this.python = false;
+    this.springboot = false;
     this.csharp = false;
     this.javascript = false;
-    this.react = false;
-    this.nodejs = false;
+    this.oracle = false;
+    this.kafka = false;
+    this.maven = false;
+
     this.filtering = false;
     this.projects = this.projectService.GetProjects();
   }
