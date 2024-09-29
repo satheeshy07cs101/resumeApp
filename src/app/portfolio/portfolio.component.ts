@@ -25,12 +25,19 @@ export class PortfolioComponent implements OnInit  {
   angular:boolean = false;
   java:boolean = false;
   springboot:boolean = false;
-  csharp:boolean = false;
+  gcp:boolean = false;
   javascript:boolean = false;
   oracle:boolean = false;
   kafka:boolean = false;
   maven:boolean = false;
-
+  pcf:boolean = false;
+  hibernate:boolean = false;
+  datastore:boolean = false;
+  jboss:boolean = false;
+  tomcat:boolean = false;
+  glassfish:boolean = false;
+  weblogic:boolean = false;
+  jsf:boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectsService ){
     this.titleService.setTitle('Satheesh Vykuntapu- Portfolio');
@@ -55,8 +62,8 @@ export class PortfolioComponent implements OnInit  {
     if(this.java){
       filterTags.push(Tag.JAVA);
     }
-    if(this.csharp){
-      filterTags.push(Tag.CSHARP);
+    if(this.gcp){
+      filterTags.push(Tag.GCP);
     }
     if(this.springboot){
       filterTags.push(Tag.SPRINGBOOT);
@@ -70,8 +77,35 @@ export class PortfolioComponent implements OnInit  {
     if(this.maven){
       filterTags.push(Tag.MAVEN);
     }
+    if(this.pcf){
+      filterTags.push(Tag.PCF);
+    }
+    if(this.hibernate){
+      filterTags.push(Tag.HIBERNATE);
+    }
 
-    if(this.springboot || this.csharp || this.maven || this.java || this.angular || this.typescript || this.kafka || this.csharp || this.javascript || this.oracle){
+    if(this.datastore){
+      filterTags.push(Tag.DATASTORE);
+    }
+
+    if(this.jboss){
+      filterTags.push(Tag.JBOSS);
+    }
+
+    if(this.tomcat){
+      filterTags.push(Tag.TOMCAT);
+    }
+    if(this.jsf){
+      filterTags.push(Tag.JSF);
+    }
+    if(this.weblogic){
+      filterTags.push(Tag.WEBLOGIC);
+    }
+    if(this.glassfish){
+      filterTags.push(Tag.GLASSFISH);
+    }
+
+    if(this.springboot || this.gcp || this.jsf || this.weblogic || this.glassfish || this.jboss || this.tomcat || this.pcf || this.datastore || this.hibernate  || this.maven || this.java || this.angular || this.typescript || this.kafka || this.javascript || this.oracle){
       this.filtering = true;
     }else{
       this.filtering = false;
@@ -86,11 +120,19 @@ export class PortfolioComponent implements OnInit  {
     this.angular = false;
     this.java = false;
     this.springboot = false;
-    this.csharp = false;
+    this.gcp = false;
     this.javascript = false;
     this.oracle = false;
     this.kafka = false;
     this.maven = false;
+    this.pcf = false;
+    this.hibernate = false;
+    this.datastore = false;
+    this.jboss = false;
+    this.tomcat = false;
+    this.jsf = false;
+    this.glassfish = false;
+    this.weblogic = false;
 
     this.filtering = false;
     this.projects = this.projectService.GetProjects();

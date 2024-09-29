@@ -55,7 +55,58 @@
                             
                         </div>
                         <div class="col">
-                            <small><b>Others:</b></small>
+                            <small><b>Cloud/Databases</b></small>
+                
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "pcf"
+                                    (change)="Filter()"
+                                    name="PCF">
+                                    <label class="form-check-label small">PCF</label>
+                                </div>
+                            </div>  
+
+        
+                            
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "gcp"
+                                    (change)="Filter()"
+                                    name="GCP">
+                                    <label class="form-check-label small">GCP</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "datastore"
+                                    (change)="Filter()"
+                                    name="Datastore">
+                                    <label class="form-check-label small">Datastore</label>
+                                </div>
+                            </div> 
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "oracle"
+                                    (change)="Filter()"
+                                    name="Oracle">
+                                    <label class="form-check-label small">Oracle</label>
+                                </div>
+                            </div>  
+
+                            
+                        </div>    
+                        <div class="col">
+                            <small><b>Frameworks:</b></small>
 
                               
                             <div class="form-group">
@@ -78,33 +129,40 @@
                                     name="Angular">
                                     <label class="form-check-label small">Angular</label>
                                 </div>
-                            </div>  
+                            </div> 
+
+                               
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "hibernate"
+                                    (change)="Filter()"
+                                    name="Hibernate">
+                                    <label class="form-check-label small">Hibernate</label>
+                                </div>
+                            </div> 
 
                             <div class="form-group">
                                 <div class="form-check">
                                     <input type="checkbox" 
                                     class="form-check-input position-static me-2"
-                                    [(ngModel)] = "maven"
+                                    [(ngModel)] = "jsf"
                                     (change)="Filter()"
-                                    name="Maven">
-                                    <label class="form-check-label small">Maven</label>
+                                    name="JSF">
+                                    <label class="form-check-label small">JSF</label>
                                 </div>
-                            </div>  
-
-        
+                            </div> 
                             
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input type="checkbox" 
-                                    class="form-check-input position-static me-2"
-                                    [(ngModel)] = "csharp"
-                                    (change)="Filter()"
-                                    name="Csharp">
-                                    <label class="form-check-label small">Csharp</label>
-                                </div>
-                            </div>
-
                             
+                            
+ 
+                        </div>      
+
+                        <div class="col">
+                            <small><b>Others:</b></small>
+                            
+                          
                             <div class="form-group">
                                 <div class="form-check">
                                     <input type="checkbox" 
@@ -120,14 +178,60 @@
                                 <div class="form-check">
                                     <input type="checkbox" 
                                     class="form-check-input position-static me-2"
-                                    [(ngModel)] = "oracle"
+                                    [(ngModel)] = "maven"
                                     (change)="Filter()"
-                                    name="Oracle">
-                                    <label class="form-check-label small">Oracle</label>
+                                    name="Maven">
+                                    <label class="form-check-label small">Maven</label>
                                 </div>
-                            </div>  
-                        </div>                        
+                            </div> 
+                            
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "jboss"
+                                    (change)="Filter()"
+                                    name="Jboss">
+                                    <label class="form-check-label small">Jboss</label>
+                                </div>
+                            </div> 
 
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "tomcat"
+                                    (change)="Filter()"
+                                    name="Tomcat">
+                                    <label class="form-check-label small">Tomcat</label>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "weblogic"
+                                    (change)="Filter()"
+                                    name="Weblogic">
+                                    <label class="form-check-label small">Weblogic</label>
+                                </div>
+                            </div> 
+
+                            
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)] = "glassfish"
+                                    (change)="Filter()"
+                                    name="GlassFish">
+                                    <label class="form-check-label small">GlassFish</label>
+                                </div>
+                            </div> 
+                        
+                        </div> 
 
                     </div>
                 </form>

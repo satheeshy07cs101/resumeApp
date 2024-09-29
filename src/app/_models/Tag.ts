@@ -6,8 +6,16 @@ export class Tag{
     static readonly KAFKA = new Tag('Kafka', '#0dcaf0');
     static readonly JAVASCRIPT = new Tag('JavaScript', 'orange');
     static readonly ORACLE = new Tag('Oracle', '#3789b9');
-    static readonly CSHARP = new Tag('C#', 'purple');
-    static readonly MAVEN = new Tag('Maven', 'purple');
+    static readonly GCP = new Tag('GCP', 'purple');
+    static readonly MAVEN = new Tag('Maven', '#748000');
+    static readonly PCF = new Tag('PCF', '#54708b');
+    static readonly HIBERNATE = new Tag('Hibernate', '#212529');
+    static readonly DATASTORE = new Tag('Datastore', 'orange');
+    static readonly JBOSS = new Tag('Jboss', '#dee2e6');
+    static readonly TOMCAT = new Tag('Tomcat', 'orange');
+    static readonly JSF = new Tag('JSF', 'orange');
+    static readonly WEBLOGIC = new Tag('Weblogic', '#49505785');
+    static readonly GLASSFISH = new Tag('Glassfish', '#54708b99');
 
     private constructor(private readonly key: string, public readonly color: string){
 
